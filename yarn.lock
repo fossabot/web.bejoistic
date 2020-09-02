@@ -5998,6 +5998,11 @@ gatsby-plugin-sharp@^2.6.4:
     svgo "1.3.2"
     uuid "^3.4.0"
 
+gatsby-plugin-simple-analytics@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-simple-analytics/-/gatsby-plugin-simple-analytics-1.0.3.tgz#8a051604c1f73cedf62ca4f8412bad2e396aaad2"
+  integrity sha512-CAKVfAlN8EbOoNThXeDwC4Neh7G8V7zTBzrdZpO0S1k60rcr0gXjI1V8QS5QJ5TYQ9yRTSjSXYhL4q3oM04jIg==
+
 gatsby-plugin-sitemap@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.4.2.tgz#23a41a8253b9b13722856fe5c6fc41896d8bda85"

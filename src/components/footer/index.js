@@ -24,7 +24,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="http://twitter.com/bejoistic"
+              href="https://twitter.com/bejoistic"
             >
               twitter
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="http://github.com/bejoistic"
+              href="https://github.com/bejoistic"
             >
               github
             </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             <a
               rel="me noreferrer noopener"
               target="_blank"
-              href="http://gitlab.com/bejoistic"
+              href="https://gitlab.com/bejoistic"
             >
               gitlab
             </a>

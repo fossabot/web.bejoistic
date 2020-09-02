@@ -66,5 +66,11 @@ module.exports = {
         classNameLight: "-light",
       },
     },
+    {
+      resolve: 'gatsby-plugin-simple-analytics',
+      options: {
+        domain: 'track.bejoistic.com'
+      }
+    }
   ],
 };

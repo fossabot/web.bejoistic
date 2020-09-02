@@ -57,6 +57,7 @@ const LogSingle = props => {
             Comment on Twitter
           </a>
         </div>
+        <br />
         <Commento
           cssOverride="/css/commento.min.css"
           autoInit="true"

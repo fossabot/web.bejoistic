@@ -49,7 +49,7 @@ function SEO({ description, meta, keywords, title, image, pathName }) {
       type: "application/rss+xml",
       rel: "alternate",
       title: "bejoistic logs",
-      href: "http://feeds.bejoistic.com/bejoistic-logs",
+      href: "https://feeds.bejoistic.com/bejoistic-logs",
     },
   ];
 
@@ -80,7 +80,7 @@ function SEO({ description, meta, keywords, title, image, pathName }) {
       >
         <html lang={siteMetadata.siteLanguage} />
         <meta name="description" content={seo.description} />
-        <link rel="alternate" type="application/rss+xml" title="Logs feed" href="http://feeds.bejoistic.com/bejoistic-logs" />
+        <link rel="alternate" type="application/rss+xml" title="Logs feed" href="https://feeds.bejoistic.com/bejoistic-logs" />
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgWebPage)}
         </script>

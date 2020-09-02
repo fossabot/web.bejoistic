@@ -11,9 +11,9 @@ const text = `
 ## Info & Contact
 
 - [hey@bejoistic.com](mailto:hey@bejoistic.com)
-- [github.com/bejoistic](http://github.com/bejoistic)
-- [lnkd.in/99e6bA](http://lnkd.in/99e6bA)
-- [@bejoistic](http://twitter.com/@bejoistic)
+- [github.com/bejoistic](https://github.com/bejoistic)
+- [gitlab.com/bejoistic](https://gitlab.com/bejoistic)
+- [@bejoistic](https://twitter.com/@bejoistic)
 - Nationality: Asian/Indonesian
 - Bahasa Indonesia: Native speaker.
 - English: Intermediate.

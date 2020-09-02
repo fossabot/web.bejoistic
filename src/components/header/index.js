@@ -68,7 +68,7 @@ const Header = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="http://podcast.bejoistic.com"
+                  href="https://podcast.bejoistic.com"
                 >
                   <DDP className="navigation-icon" />
                 </a>
@@ -77,7 +77,7 @@ const Header = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="http://webring.xxiivv.com/"
+                  href="https://webring.xxiivv.com/"
                 >
                   <WebRing className="navigation-icon" />
                 </a>
