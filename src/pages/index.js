@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
         <Box className="home-box">
           <img
             className="avatar"
-            src="https://www.gravatar.com/avatar/ca9850d5f37fdc233a6dcd03ad211886?s=1024"
+            src="/img/avatar.jpeg"
             alt="avatar"
             title="avatar"
           />
