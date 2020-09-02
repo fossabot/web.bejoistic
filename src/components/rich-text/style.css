@@ -1,0 +1,238 @@
+.rich-text {
+  font-size: 1em;
+  margin: auto;
+}
+
+.rich-text > * + * {
+  margin-top: var(--margin-04);
+}
+
+.rich-text *::selection {
+  color: var(--fg-02);
+  background: var(--hl-01);
+}
+
+.rich-text *::-moz-selection {
+  color: var(--fg-02);
+  background: var(--hl-01);
+}
+
+.rich-text p {
+  hyphens: none;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.rich-text img {
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rich-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rich-text blockquote p {
+  margin: 0;
+  max-width: none;
+}
+
+.rich-text.-limit > * + *,
+.rich-text.-limit h1,
+.rich-text.-limit h2,
+.rich-text.-limit h3,
+.rich-text.-limit h4,
+.rich-text.-limit img,
+.rich-text.-limit ul,
+.rich-text.-limit p {
+  width: 100%;
+  max-width: var(--max-width-text-column);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.rich-text.-big {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.rich-text em {
+  font-style: italic;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text blockquote {
+  box-sizing: border-box;
+  padding: var(--margin-02);
+  font-size: 1.2em;
+  width: calc(100% - var(--margin-01));
+}
+
+.rich-text.-limit blockquote,
+.rich-text.-limit blockquote p {
+  max-width: calc(var(--max-width-text-column) + var(--margin-08));
+}
+
+.rich-text blockquote *::selection {
+  color: var(--fg-02);
+  background: var(--hl-01);
+}
+
+.rich-text blockquote *::-moz-selection {
+  color: var(--fg-02);
+  background: var(--hl-01);
+}
+
+.rich-text pre {
+  font-family: var(--font-mono);
+  background-color: var(--bg-alt);
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  border-left: 2px solid var(--hl-02);
+}
+
+.rich-text hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border-color: var(--hl-02);
+}
+
+.rich-text code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: var(--bg-alt);
+  white-space: pre-wrap;
+}
+
+.rich-text pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+}
+
+.rich-text a {
+  color: var(--fg-02);
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+}
+
+.rich-text a::before {
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: var(--gray-02);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.rich-text p a {
+  font-size: 1em;
+}
+
+.rich-text a:hover,
+.rich-text a.active {
+  color: var(--fg-02);
+}
+
+.rich-text a:hover::before,
+.rich-text a.active::before {
+  width: 100%;
+  background: var(--hl-01);
+}
+
+.rich-text iframe {
+  width: 100%;
+  height: 560px;
+  display: block;
+}
+
+.rich-text ul li {
+  font-size: 1em;
+  max-width: var(--max-width);
+  line-height: 1.6em;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.rich-text ul li::before {
+  content: "- ";
+}
+
+@media (--small-screen) {
+  .rich-text.-big {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}
+
+@media print {
+  .rich-text {
+    margin-top: var(--margin-01);
+  }
+
+  .rich-text ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  }
+
+  .rich-text li:first-child:nth-last-child(2) {
+    grid-column: 1 / span 2;
+  }
+
+  .rich-text * {
+    max-width: none;
+  }
+
+  .rich-text > * + * {
+    margin-top: var(--margin-02);
+  }
+
+  .rich-text p em {
+    /* background: var(--gray-01);      padding: var(--margin-01); */
+    display: block;
+    border-radius: var(--margin-01);
+  }
+
+  .rich-text img {
+    max-width: 500px;
+    margin: var(--margin-02) auto var(--margin-02) auto;
+    page-break-before: auto
+      /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */;
+    page-break-after: auto
+      /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */;
+    page-break-inside: avoid;
+  }
+}
+
+@media (--big-screen) {
+  @supports (hyphens: auto) {
+    .rich-text p {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-align: justify;
+      text-justify: distribute;
+      text-align-last: left;
+    }
+
+    .rich-text pre {
+      hyphens: none;
+      text-align: left;
+    }
+  }
+}

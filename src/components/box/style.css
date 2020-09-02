@@ -1,0 +1,42 @@
+.box {
+  border: 4px solid var(--border);
+  padding: var(--margin-03);
+  margin: 0 0 var(--margin-01) 0;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.box.-shadow {
+  width: calc(100% - var(--margin-01));
+  box-shadow: var(--margin-01) var(--margin-01) 0 var(--border);
+}
+
+.box.-shadow::after {
+  height: 12px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARYAAAAKAQMAAABL4ONYAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMA32D/An0AAAC0SURBVBjTXcYxboRADEDR75ELK5VBOYBBHMSsiLR7Ky+aghLlxGln86qHtNYoFsPOpqqCDufhOM8I9xljzrgzI7aPO1vBZbtwn15i4n42ieGLLsDKGwulxcUhDU/7uO6Ouc7Zl+3S2Dxse9s+/PFyS6onCgQiYoX9ewKORE3+bKta0HbWGH/rYeyTN+9JVca5hi7Wh5cIhYITX7PZhEGQ8/DvzT3wY+0vqoKucf3YrzBcSLE/lKQuSiByDCcAAAAASUVORK5CYII=);
+  pointer-events: none;
+  content: " ";
+  display: block;
+}
+
+.box .rich-text > :first-child {
+  margin-top: 0;
+}
+
+@media (--small-screen) {
+  .box {
+    font-size: 1em;
+  }
+}
+
+@media print {
+  .box,
+  .box.-shadow {
+    font-size: 1em;
+    padding: var(--margin-h) var(--margin-01);
+  }
+}

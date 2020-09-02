@@ -1,0 +1,59 @@
+.row {
+  display: block;
+}
+
+.row a {
+  width: 100%;
+  color: var(--fg-02);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  padding-top: var(--margin-h);
+  padding-bottom: var(--margin-h);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.row a::before {
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: var(--hl-01);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.row a:hover::before {
+  width: 100%;
+}
+
+.row a:hover .row-text {
+  text-decoration: underline;
+}
+
+.row .row-date {
+  font-family: var(--font-mono);
+}
+
+.row a > *:not(:last-child) {
+  margin-right: var(--margin-01);
+}
+
+.row a > .row-text {
+  flex: 1 0 auto;
+}
+
+.row a > .row-hostname {
+  /* margin-right: var(--margin-03); */
+}
+
+/* @media (--small-screen) { */
+/*   .row a { */
+/*     flex-flow: row-reverse; */
+/*   } */
+/* } */

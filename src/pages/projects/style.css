@@ -1,0 +1,21 @@
+.projects-page .grid {
+  margin-top: var(--margin-02);
+}
+
+.projects-page .projects-category-nav {
+  display: flex;
+  flex-flow: row;
+}
+
+.projects-page .projects-category-nav li a {
+  color: var(--fg-02);
+  display: block;
+}
+
+.projects-page .projects-category-nav li a.-active {
+  color: var(--hl-02);
+}
+
+.projects-page .projects-category-nav li:not(:last-child) {
+  margin-right: var(--margin-01);
+}

@@ -1,0 +1,42 @@
+.log-attributes {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.log-attributes a {
+  color: currentcolor;
+  border-bottom: 1px solid var(--fg-02);
+  padding-bottom: var(--margin-q);
+  transition: all 0.2s ease;
+}
+
+.log-attributes a:hover {
+  color: var(--hl-01);
+  border-color: var(--hl-01);
+}
+
+.log-time-attributes {
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.log-attributes .log-time-wrapper {
+  margin-left: var(--margin-02);
+}
+
+@media (--small-screen) {
+  .log-time-attributes,
+  .log-attributes {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .log-attributes .log-time-wrapper {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.row .row-tags {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7em;
+}
+
+.row .row-tags li:not(:last-child) {
+  margin-right: var(--margin-01);
+}
+
+.row .row-tags li {
+  border: 1px solid var(--fg-02);
+  border-radius: var(--margin-01);
+  padding: 0 var(--margin-01);
+}
