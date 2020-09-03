@@ -35,10 +35,10 @@ The content on this site is all available for free. I write, edit and produce ev
 
 # Data
 
-This site doesn't have a database (so no accounts either). This website is hosted on Netlify and creates [logs][logs] to monitor this website but also collects some [Personally Identifiable Information (PII)][gdpr]. This happens on almost every web page you visit; logs include the IP addresses, stored for less than 30 days. 
+This site doesn't have a database (so no accounts either). This website is hosted on Vercel and creates [logs][logs] to monitor this website but also collects some [Personally Identifiable Information (PII)][dpa]. This happens on almost every web page you visit; logs include the IP addresses, stored for less than 30 days. 
 
 ## Forms
-I only collect and process data that you actively provide to me. Currently that is [Netlify Forms][forms] to parse form submissions on this site. They are send to Netlify Forms and then send to my personal e-mail which is hosted on [Soverin][soverin].
+I only collect and process data that you actively provide to me. Currently that is [Pageclip][forms] to parse form submissions on this site. They are send to Pageclip Forms and then send to my personal e-mail which is hosted on [Soverin][soverin].
 
 ### Embedded content
 Pages on this site may include embedded content (e.g. videos, images). These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content. You can use facebook container, uBlock origin and/or DuckDuckGo privacy essentials to automatically block these third-party requests. 
@@ -50,17 +50,17 @@ These are all the services that are in any way associatied to this website, you 
 * **[GitHub Privacy Policy][github]**
 * **[Soverin Privacy Policy][soverinp]**
 * **[Buttondown Privacy Policy][buttondown]**
-* **[Netlify Privacy Policy][netlify]**
+* **[Vercel Privacy Policy][vercel]**
 * **[Youtube Privacy Policy][youtube]**
 
-[gdpr]: https://www.netlify.com/gdpr/
-[forms]: https://www.netlify.com/products/forms/
-[logs]: https://docs.netlify.com/monitor-sites/logs/
+[dpa]: https://vercel.com/legal/dpa
+[forms]: https://pageclip.co/
+[logs]: https://vercel.com/blog/refined-logging
 [soverin]: https://soverin.net/
 [soverinp]: https://soverin.net/legal
 [github]: https://help.github.com/en/github/site-policy/github-privacy-statement
 [buttondown]: https://buttondown.email/privacy
-[netlify]: https://www.netlify.com/privacy/
+[vercel]: https://vercel.com/legal/privacy-policy
 [youtube]: https://www.youtube.com/about/policies/#community-guidelines
 `;
 
