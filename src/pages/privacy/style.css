@@ -1,0 +1,31 @@
+.priv-page .box {
+  margin-bottom: var(--margin-04);
+}
+
+.priv-page .disclaimer {
+  background: var(--bg-alt);
+  padding: var(--margin-h);
+  text-align: center;
+  margin: 0;
+}
+
+.priv-page .disclaimer p {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.priv-page .box .logo {
+  height: 25px;
+  margin-left: var(--margin-02);
+}
+
+@media print {
+  .priv-page .box {
+    margin-bottom: var(--margin-02);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

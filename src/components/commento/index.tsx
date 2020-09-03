@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const CONTAINER_ID = "commento";
 const SCRIPT_ID = "commento-script";
-const COMMENTO_URL = "https://commento.bejoistic.com/js/commento.js";
+const COMMENTO_URL = "https://track.bejoistic.com/embed.js";
 
 interface DataAttributes {
   [key: string]: string | boolean | undefined;
@@ -38,15 +38,15 @@ const removeScript = (id: string, parentElement: HTMLElement) => {
 
 const Commento = ({
   id,
-  cssOverride,
-  autoInit,
+  saGraphurl,
+  viewSelector,
   noFonts,
   hideDeleted,
   pageId
 }: {
   id: string;
-  cssOverride?: string;
-  autoInit?: boolean;
+  saGraphurl?: string;
+  viewSelector?: string;
   noFonts?: boolean;
   hideDeleted?: boolean;
   pageId?: string;
@@ -58,8 +58,8 @@ const Commento = ({
     const document = window.document;
     if (document.getElementById("commento")) {
       insertScript(COMMENTO_URL, SCRIPT_ID, document.body, {
-        "css-override": cssOverride,
-        "auto-init": autoInit,
+        "sa-graph-url": saGraphurl,
+        "sa-page-views-selector": viewSelector,
         "no-fonts": noFonts,
         "hide-deleted": hideDeleted,
         "page-id": pageId

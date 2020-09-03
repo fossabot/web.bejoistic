@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import truncate from "truncate";
 
-import Commento from "components/comment";
+import Commento from "components/commento";
 import Box from "components/box";
 import RichText from "components/rich-text";
 import Layout from "components/layout";
