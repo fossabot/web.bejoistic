@@ -40,16 +40,12 @@ const Commento = ({
   id,
   cssOverride,
   autoInit,
-  noFonts,
-  hideDeleted,
-  pageId
+  noFonts
 }: {
   id: string;
   cssOverride?: string;
   autoInit?: boolean;
   noFonts?: boolean;
-  hideDeleted?: boolean;
-  pageId?: string;
 }) => {
   useEffect(() => {
     if (!window) {
@@ -60,9 +56,7 @@ const Commento = ({
       insertScript(COMMENTO_URL, SCRIPT_ID, document.body, {
         "css-override": cssOverride,
         "auto-init": autoInit,
-        "no-fonts": noFonts,
-        "hide-deleted": hideDeleted,
-        "page-id": pageId
+        "no-fonts": noFonts
       });
     }
     return () => removeScript(SCRIPT_ID, document.body);

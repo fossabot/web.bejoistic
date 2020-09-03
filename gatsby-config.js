@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `bejoistic`,
@@ -44,17 +48,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-indieweb",
-      options: {
-        auth: {
-          twitter: `bejoistic`,
-          github: `bejoistic`,
-          email: `hey@bejoistic.com`,
-        },
-        webmention: `bejoistic.com`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
@@ -82,6 +75,23 @@ module.exports = {
       options: {
         domain: 'track.bejoistic.com'
       }
+    },
+    {
+      resolve: "gatsby-plugin-webmention",
+      options: {
+        username: `https://bejoistic.com`,
+        identity: {
+          twitter: `bejoistic`,
+          github: `bejoistic`,
+          email: `hey@bejoistic.com`,
+        },
+        mentions: true,
+        pingbacks: true,
+        forwardPingbacksAsWebmentions: 'https://brid.gy',
+        domain: 'bejoistic.com',
+        fetchLimit: 10000,
+        token: process.env.WEBMENTION_IO_TOKEN
+      },
     }
   ],
 };

@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
         <Box className="home-box">
           <img
             className="avatar"
-            src="/img/avatar.jpg"
+            src="/img/avatar.png"
             alt="avatar"
             title="avatar"
           />
