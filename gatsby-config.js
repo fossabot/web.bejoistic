@@ -95,7 +95,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-valine`,
       options: {
-        serverURLs process.env.LEANCLOUD_URL,
+        serverURLs: process.env.LEANCLOUD_URL,
         appId: process.env.LEANCLOUD_APP_ID,
         appKey: process.env.LEANCLOUD_APP_KEY,
         avatar: `robohash`,
