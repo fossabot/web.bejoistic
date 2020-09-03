@@ -91,6 +91,17 @@ module.exports = {
         fetchLimit: 10000,
         token: process.env.WEBMENTION_IO_TOKEN
       },
+    },
+    {
+      resolve: `gatsby-plugin-valine`,
+      options: {
+        serverURLs process.env.LEANCLOUD_URL,
+        appId: process.env.LEANCLOUD_APP_ID,
+        appKey: process.env.LEANCLOUD_APP_KEY,
+        avatar: `robohash`,
+        lang: 'en',
+        pageSize: '8',
+      },
     }
   ],
 };

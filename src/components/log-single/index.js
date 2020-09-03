@@ -5,7 +5,7 @@ import truncate from "truncate";
 import { Helmet } from "react-helmet";
 import { withPrefix, Link } from "gatsby"
 
-import Commento from "components/commento";
+import Valine from "gatsby-plugin-valine";
 import Box from "components/box";
 import RichText from "components/rich-text";
 import Layout from "components/layout";
@@ -63,11 +63,7 @@ const LogSingle = props => {
           </a>
         </div>
         <br />
-        <Commento
-          cssOverride="/css/commento.min.css"
-          autoInit="true"
-          noFonts="true"
-        />
+        <Valine />
       </div>
     </Layout>
   );
