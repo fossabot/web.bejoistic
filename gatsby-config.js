@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-resolve-src`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -98,6 +99,7 @@ module.exports = {
         serverURLs: process.env.LEANCLOUD_URL,
         appId: process.env.LEANCLOUD_APP_ID,
         appKey: process.env.LEANCLOUD_APP_KEY,
+        requiredFields: ['nick', 'mail'],
         avatar: `robohash`,
         lang: 'en',
         pageSize: '8',

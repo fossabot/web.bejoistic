@@ -12,9 +12,9 @@ import ProjectCard from "components/project-card";
 import "./home.css";
 
 const description = `
-I'm a [Indonesian](https://twitter.com/bejoistic) full-stack developer, I have [done some cool stuff](/projects). I am devoted to make technology _and coding_ more human, fun and playful. I like to make things that I haven’t made before, that's how I learn. I travel to work from anywhere, bootstrap side projects into open startups and only own what fits in my backpack.
+I'm [Indonesian](https://twitter.com/bejoistic) full-stack developer, I have [done some cool stuff](/projects). I am devoted to make technology _and coding_ more human, fun and playful. I like to make things that I haven’t made before, that's how I learn. I travel to work from anywhere, bootstrap side projects into open startups and only own what fits in my backpack.
 
-Currently improving this site with more features, content and styling. More [about me here](/about).
+Currently improving this site with more features, content and styling. Want to know more about me [here the place](/about).
 `;
 
 const IndexPage = ({ data }) => {
