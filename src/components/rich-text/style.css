@@ -30,6 +30,7 @@
   position: relative;
   width: calc(100% - var(--margin-01));
   box-shadow: var(--margin-01) var(--margin-01) 0 var(--border);
+  background: white;
 }
 
 .rich-text img::after {
