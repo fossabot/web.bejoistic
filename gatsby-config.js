@@ -44,6 +44,17 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-indieweb",
+      options: {
+        auth: {
+          twitter: `bejoistic`,
+          github: `bejoistic`,
+          email: `hey@bejoistic.com`,
+        },
+        webmention: `bejoistic.com`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {

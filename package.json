@@ -61,6 +61,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "gatsby-plugin-indieweb": "^1.0.3",
     "gatsby-plugin-simple-analytics": "^1.0.3",
     "husky": "^4.2.5",
     "prettier": "2.0.5"
