@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import truncate from "truncate";
+import { Helmet } from "react-helmet";
+import { withPrefix, Link } from "gatsby"
 
 import Commento from "components/commento";
 import Box from "components/box";
@@ -28,6 +30,9 @@ const LogSingle = props => {
 
   return (
     <Layout className="log-single">
+      <Helmet>
+        <script src={withPrefix('js/prism.min.js.js')} type="text/javascript" />
+      </Helmet>
       <SEO
         description={truncateText}
         title={title}
