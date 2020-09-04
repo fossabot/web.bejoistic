@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 import Logo from "svg/logo.svg";
 import Home from "svg/home.svg";
 import DDP from "svg/ddp.svg";
-import WebRing from "svg/webring.svg";
 import Links from "svg/link.svg";
 
 import RouteIcon from "components/route-icon";
@@ -71,15 +70,6 @@ const Header = () => {
                   href="https://podcast.bejoistic.com"
                 >
                   <DDP className="navigation-icon" />
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://webring.xxiivv.com/"
-                >
-                  <WebRing className="navigation-icon" />
                 </a>
               </li>
             </ul>
