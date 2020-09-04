@@ -109,7 +109,7 @@ module.exports = {
       resolve: 'gatsby-plugin-security-txt',
       options: {
         contact: 'mailto:hey@bejoistic.com',
-        encryption: 'https://bejoistic.com/pgp/pgp_keys.asc',
+        encryption: 'https://bejoistic.com/.well-known/gpg.pub',
         canonical: 'https://bejoistic.com/.well-known/security.txt',
         languages: 'en'
       }
