@@ -18,7 +18,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-resolve-src`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,6 +38,7 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: "gatsby-source-graphql",
       options: {
@@ -102,8 +102,17 @@ module.exports = {
         requiredFields: ['nick', 'mail'],
         avatar: `robohash`,
         lang: 'en',
-        pageSize: '8',
+        pageSize: '6',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-security-txt',
+      options: {
+        contact: 'mailto:hey@bejoistic.com',
+        encryption: 'https://bejoistic.com/pgp/pgp_keys.asc',
+        canonical: 'https://bejoistic.com/.well-known/security.txt',
+        languages: 'en'
+      }
     }
   ],
 };
