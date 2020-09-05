@@ -5,14 +5,13 @@ import truncate from "truncate";
 import { Helmet } from "react-helmet";
 import { withPrefix, Link } from "gatsby"
 
-import Commento from "components/commento";
 import Valine from "gatsby-plugin-valine";
 import Box from "components/box";
 import RichText from "components/rich-text";
 import Layout from "components/layout";
 import SEO from "components/seo";
 import LogAttributes from "components/log-attributes";
-import { getDiscussUrl, getCommentUrl } from "lib";
+import { getDiscussUrl } from "lib";
 
 import "./style.css";
 
@@ -25,10 +24,6 @@ const LogSingle = props => {
   const truncateText = truncate(post.text, 140);
 
   const discussUrl = getDiscussUrl({
-    siteUrl,
-    pathName: location.pathname,
-  });
-  const commentUrl = getCommentUrl({
     siteUrl,
     pathName: location.pathname,
   });
@@ -67,11 +62,6 @@ const LogSingle = props => {
             Comment on Twitter
           </a>
         </div>
-        <br />
-        <Commento
-          endPoint="https://webmention.bejoistic.com"
-          tarGet={commentUrl}
-        />
         <br />
         <Valine />
       </div>

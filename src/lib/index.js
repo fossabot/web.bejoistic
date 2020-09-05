@@ -25,10 +25,3 @@ export const getDiscussUrl = ({ siteUrl, pathName }) => {
 
   return `${twURL}${postURI}`;
 };
-
-export const getCommentUrl = ({ siteUrl, pathName }) => {
-  const postURL = `${siteUrl}${pathName}`;
-  const postURI = encodeURIComponent(postURL);
-
-  return `${postURI}`;
-};
