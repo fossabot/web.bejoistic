@@ -80,6 +80,7 @@ function SEO({ description, meta, keywords, title, image, pathName }) {
       >
         <html lang={siteMetadata.siteLanguage} />
         <meta name="description" content={seo.description} />
+        <link rel="webmention" href="https://webmention.bejoistic.com/receive"></link>
         <link rel="alternate" type="application/rss+xml" title="Logs feed" href="https://feeds.bejoistic.com/bejoistic-logs" />
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgWebPage)}

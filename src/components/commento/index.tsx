@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 
-const CONTAINER_ID = "commento";
 const SCRIPT_ID = "commento-script";
-const COMMENTO_URL = "https://commento.bejoistic.com/js/commento.js";
+const COMMENTO_URL = "https://webmention.bejoistic.com/ui/dist/widget.js";
 
 interface DataAttributes {
   [key: string]: string | boolean | undefined;
@@ -38,14 +37,12 @@ const removeScript = (id: string, parentElement: HTMLElement) => {
 
 const Commento = ({
   id,
-  cssOverride,
-  autoInit,
-  noFonts
+  endPoint,
+  tarGet
 }: {
   id: string;
-  cssOverride?: string;
-  autoInit?: boolean;
-  noFonts?: boolean;
+  endPoint?: string;
+  tarGet?: string;
 }) => {
   useEffect(() => {
     if (!window) {
@@ -54,15 +51,14 @@ const Commento = ({
     const document = window.document;
     if (document.getElementById("commento")) {
       insertScript(COMMENTO_URL, SCRIPT_ID, document.body, {
-        "css-override": cssOverride,
-        "auto-init": autoInit,
-        "no-fonts": noFonts
+        "endpoint": endPoint,
+        "target": tarGet
       });
     }
     return () => removeScript(SCRIPT_ID, document.body);
   }, [id]);
 
-  return <div key={id} id={CONTAINER_ID} />;
+  return <div class="webmentions webmentions-container" key={id} />;
 };
 
 export default Commento;
