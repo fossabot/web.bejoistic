@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div class="col-lg-9">
+    <h1>Welcome!</h1>
+    <p>
+      I'm <%= link "Indonesian", to: "https://twitter.com/bejoistic", target: "_blank" %> full-stack developer, I have <%= link "done some cool stuff", to: "/projects", target: "_blank" %>. I am devoted to make technology and coding more human, fun and playful.
+    </p>
+    <p>
+      I like to make things that I haven’t made before, that's how I learn. I travel to work from anywhere, bootstrap side projects into open startups and only own what fits in my backpack.
+    </p>
+    <p>
+      Currently improving this site with more features, content and styling. Want to know more about me <%= link "here the place", to: "/aboutme", target: "_blank" %>.
+    </p>
+    <div class="d-none d-lg-incline-block">
+      <%= render "_invitation.html", conn: @conn %>
+    </div>
+  </div>
+  <div class="col-7 d-lg-none">
+    <%= render "_invitation.html", conn: @conn %>
+  </div>
+  <div class="col-5 col-lg-3 image-container">
+    <%= img_tag "images/bejoistic.png" %>
+  </div>
+</div>
