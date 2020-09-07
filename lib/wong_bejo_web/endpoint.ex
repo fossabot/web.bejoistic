@@ -13,7 +13,7 @@ defmodule WongBejoWeb.Endpoint do
     at: "/",
     from: :wong_bejo,
     gzip: false,
-    only: ~w(css fonts images js favicon browserconfig.xml manifest.json robots.txt)
+    only: ~w(css fonts images js favicon .well-known browserconfig.xml manifest.json robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

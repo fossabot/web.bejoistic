@@ -1,0 +1,15 @@
+# Information related to reporting security vulnerabilities of this site.
+
+# How to communicate about security issues.
+Contact: mailto:hey@bejoistic.com
+
+# Link to a key for secure communication.
+Encryption: https://bejoistic.com/.well-known/gpg.pub
+
+# Acknowledgements
+
+# Preferred languages for communication.
+Preferred-Languages: en, id
+
+# The most common URL for accessing this security.txt file.
+Canonical: https://bejoistic.com/.well-known/security.txt
