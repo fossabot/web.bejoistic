@@ -7,6 +7,13 @@ defmodule WongBejoWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug PlugSecex,
+      overrides: [
+        "server": "Warp/3.3.10",
+        "x-dns-prefetch-control": "on",
+        "x-frame-options": "DENY",
+        "x-hacker": "CTF feature coming soon"
+      ]
   end
 
   pipeline :api do

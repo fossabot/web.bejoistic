@@ -54,6 +54,7 @@ defmodule WongBejo.MixProject do
       {:bamboo, "~> 1.4"},
       {:recaptcha, "~> 3.0"},
       {:postex, "~> 0.1.0"},
+      {:plug_secex, "~> 0.1.3"},
       # Tooling
       {:ex_check, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, "~> 1.2.0", only: [:dev, :test], runtime: false},
