@@ -59,10 +59,6 @@ recaptcha_public_key =
     For example: RECAPTCHA_PUBLIC_KEY=xxxxxxxxxxxxxxxxxx
     """
 
-config :wong_bejo, WongBejoWeb.Endpoint,
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
-
 # Do not print debug messages in production
 config :logger, level: :info
 
@@ -85,8 +81,7 @@ config :wong_bejo, WongBejoWeb.Endpoint,
   url: [host: web_host, path: "/", scheme: "https", port: 443],
   load_from_system_env: true,
   cache_static_manifest: "priv/static/cache_manifest.json",
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  ssl: true,
+  force_ssl: [rewrite_on: [:x_forwarded_proto], hsts: true, host: nil],
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   secret_key_base: secret_key_base,
   check_origin: [full_web_host]
