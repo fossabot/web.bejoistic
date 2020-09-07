@@ -6,7 +6,6 @@ My bejoistic.com blog site, powered by Elixir, Phoenix and Heroku.
 
 ---
 
-[![Codeship Status for shittyweb/web.bejoistic](https://app.codeship.com/projects/a8566310-d0f7-0138-0e0b-56b35a331979/status?branch=v3)](https://app.codeship.com/projects/408149)
 ![Phoenix ex_check](https://github.com/shittyweb/web.bejoistic/workflows/Phoenix%20ex_check/badge.svg)
 ![Phoenix Dialyzer](https://github.com/shittyweb/web.bejoistic/workflows/Phoenix%20Dialyzer/badge.svg)
 ![Phoenix - Cypress Acceptance Tests](https://github.com/shittyweb/web.bejoistic/workflows/Phoenix%20-%20Cypress%20Acceptance%20Tests/badge.svg)
