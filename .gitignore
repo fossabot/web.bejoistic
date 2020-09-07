@@ -36,3 +36,6 @@ config/dev.secret.exs
 .elixir_ls
 *.mp4
 cypress/screenshots
+
+# Do not edit.
+.tup
