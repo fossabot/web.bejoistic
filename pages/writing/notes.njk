@@ -1,0 +1,25 @@
+---
+layout: layouts/overview
+title: Notes
+permalink: notes/
+eleventyNavigation:
+  key: Notes
+  order: 8
+---
+{% import 'components/atoms/card.njk' as card %}
+
+<section class="note-list">
+  <ul class="list grid grid-xl">
+    {%- for note in collections.note | reverse -%}
+      {{ card.list
+        (
+          note.url,
+          note.data.title,
+          note.templateContent | safe,
+          note.data.date,
+          note.data.type
+        )
+      }}
+    {%- endfor -%}
+  </ul>
+</section>

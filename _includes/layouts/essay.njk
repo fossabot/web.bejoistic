@@ -1,0 +1,16 @@
+---
+layout: layouts/base
+---
+
+{% include 'components/molecules/cover.njk' %}
+
+<main class="wrapper">
+  {{ content | safe }}
+  {% include 'components/atoms/signature.njk' %}
+  {% include 'components/atoms/biography.njk' %}
+</main>
+</section>
+
+<footer>
+  {% include 'components/molecules/tag-list.njk' %}
+</footer>

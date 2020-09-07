@@ -1,0 +1,57 @@
+---
+layout: layouts/default
+title: Contact
+description: You can e-mail, chat or follow me on any of the social platforms. Find me on many places on the internet as @bejoistic.
+permalink: contact/
+eleventyNavigation:
+  key: Contact
+  order: 12
+---
+
+{% import 'components/atoms/link.njk' as link %}
+{% import 'components/atoms/social.njk' as social %}
+{% import 'components/atoms/details.njk' as details %}
+{% import 'components/molecules/image-grid.njk' as grid %}
+
+<div class="h-card">
+  <p>Hi! I'm <a class="p-name u-url" href="https://bejoistic.com">Ahmad Ainul Rizki</a> (@bejoistic), which you've probably already guessed from the header above. I like making stuff on the internet. I'm passionate about technology, privacy, time well spent, interfaces and building digital products.</p>
+</div>
+
+<h3>Mail</h3>
+<p>Oh, e-mail. I have a bit of a love–hate relationship with digital letters. The most <em>formal</em> way to reach me which usually yields a <em>crafted</em> response from me.
+
+<ul>
+  <li>{{ link.mail("hey@bejoistic.com") }} (personal)</li>
+</ul>
+
+
+<h3>Chat</h3>
+<p><em>Informal</em> way to reach me for <em>quick</em> questions and <em>brief</em> responses.</p>
+
+<ul>
+  <li>{{ link.ext("https://keybase.io/bejoisticom", "Keybase @bejoisticom") }}</li>
+  <li>{{ link.ext("https://t.me/bejoistic", "Telegram Conversation") }}</li>
+  <li>{{ link.ext("https://www.twitter.com/bejoistic", "Twitter Direct Message") }}</li>
+  <li>{{ link.tel("+31641025262") }}</li>
+</ul>
+
+
+<h3>Social</h3>
+<p>Best suited to keep track of what I'm doing without engaging in the matter.
+<em>In order of most active</em></p>
+
+<ul class="social">
+  {{ social.icon("https://www.twitter.com/bejoistic", "/static/img/icons/social/twitter.svg", "Twitter", "Tweets about tech and other random stuff.") }}
+  {{ social.icon("https://github.com/bejoistic", "/static/img/icons/social/github.svg", "GitHub", "Open-source projects and contributions.") }}
+  {{ social.icon("https://gitlab.com/bejoistic", "/static/img/icons/social/gitlab.svg", "GitLab", "Open-source projects and contributions.") }}
+  {{ social.icon("https://dev.to/bejoistic", "/static/img/icons/social/dev.svg", "Dev.to", "All the more technical related writing.") }}
+  {{ social.icon("https://patreon.com/bejoistic", "/static/img/icons/social/patreon.svg", "Patreon", "Exclusive content and support option.") }}
+  {{ social.icon("https://goodreads.com/bejoistic", "/static/img/icons/social/goodreads.svg", "Goodreads", "Want to read books and reviews.") }}
+  {{ social.icon("https://codepen.io/bejoistic", "/static/img/icons/social/codepen.svg", "Codepen", "Code snippets and developer artifacts.") }}
+  {{ social.icon("https://open.spotify.com/user/rtm8o0r8kptro34ym00qom774?si=7jJRvVRVTOODsiQcRE1bVg", "/static/img/icons/social/spotify.svg", "Spotify", "Weekly Playlists and classic house beats.") }}
+  {{ social.icon("https://www.producthunt.com/@bejoistic", "/static/img/icons/social/product-hunt.svg", "Product Hunt", "Surfaces the best new products.") }}
+  {{ social.icon("https://bandcamp.com/bejoistic", "/static/img/icons/social/bandcamp.png", "Bandcamp", "Discover amazing music from the artists.") }}
+</ul>
+
+<h3>#AMA</h3>
+<p>I host a ask me anything over on my <a href="/ama">#ama page</a>. You can see if I already answered your question publicly. If it's not on there, ask it and I'll add it to the list!</p>

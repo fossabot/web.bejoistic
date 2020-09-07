@@ -1,0 +1,46 @@
+---
+layout: layouts/default
+title: Updates
+description: You probably don't want to check my site every day, subscribe to my feeds or follow me on social to receive updates on a regular basis.
+permalink: updates/
+eleventyNavigation:
+  key: Updates
+  order: 11
+---
+
+{% import 'components/atoms/link.njk' as link %}
+{% import 'components/atoms/button.njk' as button %}
+
+<h3>Electronic Mail</h3>
+
+<p>A weekly newsletter with useful resources thoroughly curated. Typed with ❤️ by Ahmad Ainul Rizki, delivered every Sunday.</p>
+
+{{ button.primary("/newsletter", "Subscribe to electronic mail")}}
+
+<h3>RSS feeds</h3>
+
+<p><em><a href="https://laurakalbag.com/how-to-read-rss-in-2020/">Not sure what RSS is and how it works?.</a></em></p>
+
+<p>I personally use <a href="https://Feedbin.com">feedbin</a> to subscribe to RSS feeds. You could also use <a href="https://rssmailer.app/">RSSMailer</a> to receive mails in your inbox.</p>
+
+<ul>
+  <li>{{ link.inl("http://bejoistic.com/articles/feed.xml", "Articles") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/notes/feed.xml", "Notes") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/weeknotes/feed.xml", "Weeknotes") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/journal/feed.xml", "Journal") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/guides/feed.xml", "Guides") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/essays/feed.xml", "Essays") }}</li>
+  <li>{{ link.inl("http://bejoistic.com/links/feed.xml", "Links") }}</li>
+</ul>
+
+<h3>Social</h3>
+
+<p>You can also follow me on social media. I post most (not all) of my writing and resources on one of these channels</p>
+
+<ul>
+  <li>{{ link.inl("https://www.twitter.com/bejoistic", "Twitter") }}</li>
+  <li>{{ link.inl("https://github.com/bejoistic", "GitHub") }}</li>
+  <li>{{ link.inl("https://dev.to/bejoistic", "Dev.to") }}</li>
+  <li>{{ link.inl("https://dribbble.com/bejoistic", "Dribbble") }}</li>
+  <li>{{ link.inl("https://www.producthunt.com/@bejoistic", "ProductHunt") }}</li>
+</ul>

@@ -1,0 +1,29 @@
+---
+layout: layouts/overview
+title: Writing
+description: A few things I've written to help me think or share what I know. Usually short posts and notes but also longer essays and guides.
+permalink: writing/
+eleventyNavigation:
+  key: Writing
+  order: 4
+---
+
+<ul class="skip-list">
+  <li><a class="skip-item tag" href="/tags/technology/">technology</a></li>
+  <li><a class="skip-item tag" href="/tags/life/">life</a></li>
+  <li><a class="skip-item tag" href="/tags/humanity/">humanity</a></li>
+  <li><a class="skip-item tag" href="/tags/programming/">programming</a></li>
+  <li><a class="skip-item tag" href="/tags/blockchain/">blockchain</a></li>
+  <li><a class="skip-item tag" href="/tags/reality/">reality</a></li>
+  <li><a class="skip-item tag" href="/tags/">other-tags</a></li>
+</ul>
+
+<section class="article-list grid grid-l">
+  {%- for article in collections.article | reverse -%}
+    {% if article.date | year != lastDate | default('0', true) %}
+      <h3 class="grid-full">{{ article.date | year}}</h3>
+      {% set lastDate = article.date | year %}
+    {% endif %}
+    {% include 'components/atoms/article.njk' %}
+  {%- endfor -%}
+</section>

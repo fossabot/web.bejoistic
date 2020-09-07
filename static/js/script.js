@@ -1,0 +1,1 @@
+console.log('%c Be Nice ', 'background: black; color: white; display: block; font-size: 5em;');

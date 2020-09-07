@@ -1,0 +1,45 @@
+.tag-list {
+  @mixin reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: $b2;
+  border-bottom: $b2;
+  padding: $s1 $s5;
+}
+
+.tag-item {
+  margin-right: $s1;
+}
+
+.tag-title {
+  font-weight: 700;
+  margin-right: $s1;
+}
+
+.skip-list {
+  @mixin reset-list;
+  @mixin fade-out;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skip-item {
+  @mixin reset-link;
+
+  border-top: $b1;
+  border-bottom: $b1;
+  border-right: $b1;
+  padding: calc($s-2 / 3) calc($s-2);
+
+  &::before {
+    content: "#";
+  }
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}

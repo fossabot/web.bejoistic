@@ -1,0 +1,7 @@
+{% macro modal(title, description, link, linkText) %}
+  <div class="modal">
+    <h5>{{ title }}</h6>
+    <p>{{ description }}</p>
+    <a class="btn" href="{{ link }}">{{ linkText }}</a>
+  </div>
+{% endmacro %}

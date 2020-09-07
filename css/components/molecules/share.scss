@@ -1,0 +1,19 @@
+.share {
+  padding: $s4;
+
+  input {
+    padding: $s-2;
+    font-size: $s-1;
+    display: inline-block;
+    background: $secondary;
+    color: $primary;
+    margin-top: $s1;
+    width: 45%;
+    overflow: show;
+    display: none;
+  }
+
+  .is-open {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+---
+layout: layouts/overview
+description: Collecting my favourite links from around the internet.
+title: Links
+permalink: links/
+---
+
+{% import 'components/atoms/card.njk' as card %}
+
+<ul class="list grid grid-xl">
+  {%- for link in collections.link | reverse -%}
+    {{ card.list
+      (
+        link.url,
+        link.data.title,
+        link.templateContent | safe,
+        link.data.date,
+        link.data.type
+      )
+    }}
+  {%- endfor -%}
+</ul>

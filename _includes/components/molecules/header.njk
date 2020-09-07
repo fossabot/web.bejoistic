@@ -1,0 +1,16 @@
+{% if page.url === '/' %}
+  <header class="homepage-header">
+{% else %}
+  <header>
+{% endif %}
+  <span class="redaction"> {{ title }} </span>
+  <h1>{{ title }}</h1>
+  {% if date %}
+    <h2>{{ date | readableDate }} </h2>
+  {% else %}
+    <h2>{{ description }} </h2>
+  {% endif %}
+  {% if page.url === '/' %}
+    <img class="header-img" src="/static/img/avatar-doodle.png" alt="Portrait Doodle of Ahmad Ainul Rizki"/>
+  {% endif %}
+</header>

@@ -1,0 +1,29 @@
+---
+layout: layouts/post-head
+---
+
+{% include 'components/molecules/site-header.njk' %}
+
+<main class="wrapper" id="main">
+  <header class="post">
+    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    <span> ▪ {{ content | readingTime }} ▪ </span><a href="{{ metadata.url }}{{ page.url }}#commento"></a>
+    <h1 class="header__title display">{{ title }}</h1>
+    <h2 class="header__subtitle">{{ description }}</h2>
+  </header>
+  <div class="content note">
+    {{ content | safe }}
+
+    {% if posted %}
+      <hr>
+      <a href="{{ posted }}">Posted on Twitter on {{ date | readableDate}}</a>
+    {% endif %}
+
+    <hr>
+    {% include 'components/molecules/commento.njk' %}
+  </div>
+  <footer>
+    {% include 'components/molecules/tag-list.njk' %}
+    {% include 'components/molecules/share.njk' %}
+  </footer>
+</main>

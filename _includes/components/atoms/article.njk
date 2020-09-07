@@ -1,0 +1,7 @@
+<article class="article-item h-entry">
+  <a class="u-url" href="{{ article.url }}">
+    <h3 class="p-name">{{ article.data.title }}</h3>
+    <p class="p-summary">{{ article.data.description }}</p>
+    <time class="dt-published" datetime="{{ article.date | htmlDateString }}">{{ article.date | dotDate }}</time>
+  </a>
+</article>

@@ -1,0 +1,36 @@
+---
+layout: layouts/post-head
+---
+
+{% include 'components/molecules/site-header.njk' %}
+{% import 'components/atoms/notification.njk' as notification %}
+
+<main class="wrapper" id="main">
+  <header class="post">
+    {% if tags.includes("archive") %}
+      {{ notification.not
+        (
+          "Archive",
+          "You are looking at a post that is archived, probably because my views have changed or the information in it is outdated."
+        )
+      }}
+    {% endif %}
+    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    <span> ▪ {{ content | readingTime }}</span>
+    <h1 class="header__title display">{{ title }}</h1>
+    <h2 class="header__subtitle">{{ description }}</h2>
+    <hr>
+    <ul><li><a href="{{ metadata.url }}/privacy">privacy</a> ▪ <a href="{{ metadata.url }}{{ page.url }}#commento"></a></li></ul>
+  </header>
+  <div class="content post">
+    {{ content | safe }}
+    {% include 'components/atoms/signature.njk' %}
+    <hr>
+    {% include 'components/molecules/commento.njk' %}
+  </div>
+  <footer>
+    {% include 'components/atoms/biography.njk' %}
+    {% include 'components/molecules/tag-list.njk' %}
+    {% include 'components/molecules/share.njk' %}
+  </footer>
+</main>

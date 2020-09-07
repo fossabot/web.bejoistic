@@ -1,0 +1,69 @@
+---
+layout: layouts/default
+title: Welcome
+description: Hi! I'm Ainul (@bejoistic), which you've probably already guessed from the website name. I'm an Indie Maker building digital products for the web and working remotely implementing blockchain in Indonesia.
+eleventyNavigation:
+  key: Welcome
+  order: 1
+---
+
+<div class="grid">
+  <article class="article-item">
+    <h3>Projects</h3>
+    <p>Sometimes I tinker with code or create DIY projects. Most of them are just fun side projects that have no meaning at all.</p>
+    <a href="/projects" class="btn btn-secondary">See all projects</a>
+    <div class="projects-dither"></div>
+  </article>
+
+  <article class="article-item">
+    <h3>Contact</h3>
+    <p>If you want to learn more about my experience or have a project that may be a good fit, drop me a line and we’ll chat!</p>
+    <a href="/contact" class="btn btn-secondary">Let's talk</a>
+    <div class="contact-dither"></div>
+  </article>
+
+  <article class="article-item">
+    <h3>Notes</h3>
+    <p>My secretly personal maybe notes in this year. The world needs a little more weird. These notes are helping.</p>
+    <a href="/notes" class="btn btn-secondary">Just for me</a>
+    <div class="notes-dither"></div>
+  </article>
+</div>
+
+<div class="grid">
+  <article class="article-item">
+    <h3>Latest writing:</h3>
+    {%- for article in collections.article | reverse | limit(1) -%}
+        <p><strong> {{ article.data.title }}:</strong> {{ article.data.description }}</p>
+    {%- endfor -%}
+    <a href="/writing" class="btn btn-secondary">Read this post</a>
+  </article>
+  <article class="article-item">
+    <h3>What's new?</h3>
+    <p>Working on a new micro-startup called <strong>'bejoonesia'</strong> to help find the best services in critical moment.</p>
+    <a href="/projects" class="btn btn-secondary">Read more about it</a>
+  </article>
+</div>
+
+<div class="grid">
+  <article class="article-item">
+    <h3>An IndieWeb Webring 🕸💍</h3>
+    <a href="https://xn--sr8hvo.ws/" class="btn btn-secondary">Join this ring</a>
+    <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%F0%9F%91%A8%E2%80%8D%F0%9F%91%A7%F0%9F%9A%96%F0%9F%98%B6/previous" class="btn btn-secondary"><strong>←</strong></a>
+    <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%F0%9F%91%A8%E2%80%8D%F0%9F%91%A7%F0%9F%9A%96%F0%9F%98%B6/next" class="btn btn-secondary"><strong>→</strong></a>
+  </article>
+  <article class="article-item">
+    <div class="grid">
+        <a href="/now" class="btn btn-secondary"><strong>Now</strong></a>
+        <a href="/privacy" class="btn btn-secondary"><strong>Privacy</strong></a>
+        <a href="/principles" class="btn btn-secondary"><strong>Principles</strong></a>
+    </div>
+  </article>
+</div>
+
+<div class="grid">
+  <a href="/contact" class="link-block"><strong>Contact me</strong></a>
+  <a href="/support" class="link-block"><strong>Support me</strong></a>
+  <a href="/uses" class="link-block"><strong>Uses</strong></a>
+  <a href="/updates" class="link-block"><strong>Stay updated</strong></a>
+</div>

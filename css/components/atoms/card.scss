@@ -1,0 +1,102 @@
+.card {
+  display: inline-block;
+
+  &-block {
+    padding: $s4;
+    border: $b1;
+    position: relative;
+  }
+
+  &-item {
+    border-right: $b1;
+    border-bottom: $b1;
+  }
+
+  h3 {
+    font-size: $s1;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  img {
+    max-height: 20vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-product {
+    border: $b1;
+    padding: $s4 $s1 $s1 $s1;
+    margin-top: $s6;
+    display: block;
+    max-width: $width;
+
+    h4 {
+      font-size: $s-1;
+      text-transform: uppercase;
+      border: $b1;
+      padding: $s-3 $s-1;
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      transform: translateY(-4rem);
+      background: $primary;
+    }
+  }
+
+  &-list {
+    border: $b1;
+    position: relative;
+
+    .list-meta {
+      display: flex;
+      align-items: center;
+      padding: $s0 $s4 $s0 $s4;
+      border-top: $b1;
+    }
+
+    .list-type {
+      padding: $s-3 $s-1;
+      background: $secondary;
+      color: $primary;
+      font-size: $s-1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .list-avatar {
+      width: $s4;
+      border-radius: 100%;
+      margin-right: $s1;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+    }
+  }
+}
+
+.content a {
+  position: relative;
+}
+
+.list-content {
+  padding: $s4;
+}
+
+.avatar {
+  width: $s2;
+  border-radius: 100%;
+  margin-right: $s1;
+  vertical-align: sub;
+}
+
+.course {
+  border-top: $b1;
+}

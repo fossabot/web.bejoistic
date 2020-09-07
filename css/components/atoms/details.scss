@@ -1,0 +1,21 @@
+details {
+  summary {
+    list-style-image: url(/static/img/icons/arker-light.svg);
+    padding: $s1;
+    background-color: $secondary;
+    color: $primary;
+    max-width: $width;
+  }
+
+  summary::-webkit-details-marker {
+    background: url(/static/img/icons/marker-light.svg);
+    color: transparent;
+    width: 2em;
+  }
+
+  p {
+    background: $secondary;
+    color: $primary;
+    padding: $s1;
+  }
+}

@@ -1,0 +1,48 @@
+---
+layout: layouts/default-width
+title: Media Diet
+description: A list of media that I have read, watched or played.
+permalink: media-diet/
+---
+<div class="timeline">
+  <div class="column">
+    <h2><a href="/media-diet/books">Books</a></h2>
+    <ul class="book-list">
+      {% for item in books.books | reverse %}
+        {% include 'components/atoms/media-line.njk' %}
+      {% endfor %}
+    </ul>
+    <p>Total: {{ books.books | size }}</p>
+  </div>
+
+  <div class="column">
+    <h2><a href="/media-diet/movies">Movies</a></h2>
+    <ul class="movies-list">
+      {% for item in movies.movies | reverse %}
+        {% include 'components/atoms/media-line.njk' %}
+      {% endfor %}
+    </ul>
+    <p>Total: {{ movies.movies | size }}</p>
+  </div>
+
+  <div class="column">
+    <h2><a href="/media-diet/series">Series</a></h2>
+    <ul class="series-list">
+      {% for item in series.series | reverse %}
+        {% include 'components/atoms/media-line.njk' %}
+      {% endfor %}
+      <p>Total: {{ series.series| size }}</p>
+    </ul>
+  </div>
+
+  <div class="column">
+    <h2><a href="/media-diet/games">Games</a></h2>
+    <ul class="games-list">
+      {% for item in games.games | reverse %}
+        {% include 'components/atoms/media-line.njk' %}
+      {% endfor %}
+    </ul>
+    <p>Total: {{ games.games| size }}</p>
+  </div>
+
+</div>

@@ -1,0 +1,33 @@
+---
+layout: layouts/default
+title: Search
+description: The bejoistic search engine.
+permalink: search/
+eleventyNavigation:
+  key: Search
+  order: 3
+---
+<p>Search any keyword with any of the following search engines and you'll hopefully get a page on my website back.</p>
+
+<h3>DuckDuckGo</h3>
+
+<div class="boilerform">
+  <form method="get" action="https://duckduckgo.com/" class="search" target="_blank">
+    <label for="search-str">Search with duckduckgo redirect </label>
+    <input type="text" class="c-input-field" name="q" id="search-str">
+    <input type="hidden" name="sites" value="bejoistic.com">
+    <input type="hidden" name="kj" value="#000000">
+    <button type="submit" class="submit btn btn-secondary">Search with DuckDuckGo</button>
+  </form>
+</div>
+
+<h3>Google</h3>
+
+<div class="boilerform">
+  <form action="https://www.google.com/search" method="get" class="search" target="_blank">
+    <input type="hidden" name="q" id="q" value="site:bejoistic.com">
+    <label for="search-str">Search with google redirect </label>
+    <input type="text" class="c-input-field" name="q" id="search-str">
+    <button type="submit" class="submit btn btn-secondary">Search with Google</button>
+  </form>
+</div>

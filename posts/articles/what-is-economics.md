@@ -1,0 +1,24 @@
+---
+title: What Is Economics?
+subtitle: "Economics covers more topics than simply ethics."
+description: "Economics covers more topics than simply ethics."
+slug: what-is-economics
+date: 2016-01-12
+tags: ["article", "philosophy", "economics"]
+layout: layouts/post.njk
+permalink: /articles/{{ slug }}/index.html
+---
+
+Economics has been called many things: some thought it was a science like biology or psychology, others thought of it as merely an intellectual pursuit such as philosophy, and others think of it as a way of explaining cultural ethics. Each of these views is at least partially correct because the study of human action and interaction encompasses them all. This essay will discuss these three different views of economics and how they are all a necessary part of the field of economics but fail to understand it as a whole.
+
+The “orthodox” view of economics is that it is a science because “it comprises a set of analytical principles that work with consistent regularity,” but unlike physics or biology, economics is a social science ”because it studies human behavior rather than the disembodied workings of nature” (Ekelund 1). Simply put, this view argues that economics is empirical, using the scientific method to come to conclusions. While this is the generally accepted understanding of economics, it fails to understand the fundamental question that economics is asking. Other sciences like physics, biology are attempting to find out how the world works; biology asks how living things work, chemistry asks how chemicals interact. Even other social sciences like psychology are asking the question of how people work. They are all at their core searching for information. Economics is different because it doesn’t stop there. Economics doesn’t just seek to find how and why people act and interact, economics asks what is the best way for scarce resources to be allocated given how people act and interact. This has been true since Plato and Aristotle posited how governments and families ought to be structured.
+
+Another view of economics is that of a philosophical enterprise. This view was much more prevalent during the pre-classic era, from the time of Plato and Aristotle to the middle ages, and has been championed by the Austrian school in modern times. This view understands that contemplating the value of resources and property rights and other things involved with the fundamental question of economics is inherently philosophical in nature, one cannot find the answer to these questions purely via empiricism. The Austrian school would also add that because of human subjectivity, one cannot use empiricism to predict the future because the past just explains how people acted based on their valuations at that specific time, one can only draw broad insights from the past. For example, one cannot say that a person will always make a specific action in a certain situation, one can only say that a person will act in some manner in every situation. However, refusing to utilize empiricism and mathematical analysis when answering these questions doesn’t allow one to fully understand reality. A priori reasoning can only take one so far, one needs to eventually use data from real-world experiences to confirm what is deducted from philosophizing alone.
+
+The final view of economics to be discussed now argues that economics is a discussion of ethics at its core. This view has merit because the fundamental question of economics is a question of ethics: what is it that people ought to do. However, it is not nearly complete enough for two reasons. First, economics is not a morality play, the economist’s job is not to attempt to get people to act in a more moral manner. Rather, the economist attempts to figure out how scarce resources are best allocated/utilized, given how people act. Second, economics covers more topics than simply ethics. In order to answer its fundamental question, economics needs to ask why one allocation is correct or not. As Hazlett wrote in Economics in One Lesson, “[t]he art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy; it consists in tracing the consequences of that policy not merely for one group but for all groups” (Hazlett 17). In order to properly do this, one needs both empiricism and philosophy, one cannot simply use ethics. Therefore, economics is not just an empirical study, nor is it simply a philosophical enterprise, nor is it the construction of an ethical framework. Rather, economics is the act of using empiricism and philosophy to answer a question of ethics.
+
+Works Cited:
+
+Ekelund, Robert B., and Robert F. Hebert. *A History of Economic Theory and Method*. Fifth Edition ed., Waveland Press, Inc., 2007.
+
+Hazlett, Henry. *Economics in One Lesson*. New York, Three Rivers Press, 1979.

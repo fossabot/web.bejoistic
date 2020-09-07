@@ -1,0 +1,26 @@
+.btn {
+  padding: $s-3 $s-1;
+  font-size: 0.9rem;
+  @mixin reset-link;
+
+  &-primary {
+    background: $primary;
+    color: $secondary;
+    border: $b1 $secondary;
+    box-shadow: inset 0 -0rem 0 0 $secondary;
+    box-shadow: 0 3px lightgrey;
+    transform: translateY(0%);
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 -0.15rem 0 0 $secondary;
+      transform: translateY(-15%);
+    }
+  }
+
+  &-secondary {
+    background: $primary;
+    color: $secondary;
+    border: $b1;
+  }
+}

@@ -1,0 +1,11 @@
+---
+layout: layouts/overview
+title: Books
+permalink: media-diet/books/index.html
+---
+
+<ul class="book-list grid">
+  {% for item in books.books | reverse %}
+    {% include 'components/atoms/media-item.njk' %}
+  {% endfor %}
+</ul>

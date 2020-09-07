@@ -1,0 +1,94 @@
+header {
+  padding: $s4 0;
+  border-bottom: 2px solid $secondary;
+  position: relative;
+  background: $primary;
+  z-index: 1;
+}
+
+body > header {
+  background-image: radial-gradient($secondary 0.5px, transparent 0);
+  background-size: calc(3 * 2px) calc(3 * 2px);
+}
+
+header a {
+  background: $primary;
+}
+
+.container > * + * {
+  margin-top: $s1;
+}
+
+header h2 {
+  font-size: $s1;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: $width;
+}
+
+.site-header {
+  flex-basis: fit-content;
+  flex-grow: 1;
+  border-right: $b1;
+}
+
+nav > ul > li {
+  padding-left: $s3;
+  padding-right: $s3;
+  padding-bottom: $s-3;
+  padding-top: $s-3;
+  margin: 0;
+}
+
+.active {
+  background: $primary;
+  color: $secondary;
+
+  &::before {
+    content: ">";
+  }
+}
+
+@media (max-width: 60em) {
+  .site-header {
+    order: 2;
+    padding: $s2 0;
+    border-right: none;
+
+    ul {
+      display: flex;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 97vw;
+      align-items: center;
+      border-top: 1px solid white;
+    }
+  }
+}
+
+main header {
+  padding: $s4;
+}
+
+main header > * + * {
+  margin-top: $s1;
+}
+
+.header-img {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 30%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.redaction {
+  font-family: "Redaction", monospace;
+  position: absolute;
+  font-size: 15vw;
+  line-height: 0.8;
+  color: #e7e7e7;
+  opacity: 0.5;
+  z-index: -1;
+}

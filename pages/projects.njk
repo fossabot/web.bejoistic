@@ -1,0 +1,27 @@
+---
+layout: layouts/overview
+title: Projects
+description: Silly side projects, open-source tools and websites scattered around the web.
+permalink: projects/
+eleventyNavigation:
+  key: Projects
+  order: 6
+---
+{% import 'components/atoms/card.njk' as card %}
+
+<section class="grid-l">
+  {%- for project in collections.project | reverse -%}
+    {% if project.date | year != lastDate | default('0', true) %}
+        <h3 class="grid-full">{{ project.date | year}}</h3>
+      {% set lastDate = project.date | year %}
+    {% endif %}
+    {{ card.item
+      (
+        project.url,
+        project.data.image,
+        project.data.title,
+        project.data.description
+      )
+    }}
+  {%- endfor -%}
+</section>

@@ -1,0 +1,7 @@
+{% macro breakout(title, description, link, anchor) %}
+  <article class="breakout-box">
+    <h4>{{ title }}</h4>
+    <p>{{ description }}</p>
+    <a class="breakout-button" type="button" href="{{ link }}" >{{ anchor }}</a>
+  </article>
+{% endmacro %}

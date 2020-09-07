@@ -1,0 +1,7 @@
+nav > ul {
+  padding-left: 0;
+}
+
+nav > ul > * + * {
+  margin-top: $s1;
+}

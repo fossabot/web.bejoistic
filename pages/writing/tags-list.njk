@@ -1,0 +1,14 @@
+---
+layout: layouts/overview
+permalink: /tags/
+title: All tags
+---
+
+<ul class="skip-list">
+{% for tag in collections.tagList %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <li>
+      <a class="skip-item tag" href="{{ tagUrl | url }}">{{ tag }}</a>
+    </li>
+{% endfor %}
+</ul>

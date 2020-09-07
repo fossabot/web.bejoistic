@@ -1,0 +1,8 @@
+.link-int::after {
+  content: "→";
+  margin-left: $s0;
+}
+
+.link-ext::after {
+  margin-left: $s0;
+}

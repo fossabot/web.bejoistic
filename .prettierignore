@@ -1,0 +1,14 @@
+# Stuff that doesn't play well with Prettier
+static/
+
+# output from Hugo
+_site/
+
+# miscellaneous
+.github/
+.lighthouseci/
+.netlify/
+.now/
+.vercel/
+.vscode/
+LICENSE

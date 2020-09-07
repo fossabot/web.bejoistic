@@ -1,0 +1,53 @@
+:root {
+  font-size: calc(0.125vw + $base);
+  font-family: "Simplon Mono", monospace;
+  line-height: $ratio;
+}
+
+p {
+  line-height: calc($base * $ratio * $ratio);
+}
+
+small {
+  font-size: $s-1;
+  font-weight: 700;
+}
+
+time {
+  font-size: $s-1;
+}
+
+time {
+  letter-spacing: 0.1rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin: $s1;
+
+  footer {
+    text-align: right;
+  }
+}
+
+.post > p:last-of-type::after {
+  color: #fff;
+  content: " \25A0";
+}
+
+.post {
+  border-bottom: $b1;
+}
+
+.d-1 {
+  font-weight: 400;
+  font-size: $s2;
+  margin-top: 0;
+}
+
+a {
+  text-decoration-color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+  text-decoration-skip-ink: auto;
+}

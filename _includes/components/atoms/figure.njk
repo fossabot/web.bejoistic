@@ -1,0 +1,15 @@
+{% macro figure(src, alt, caption) %}
+  <figure>
+    <img src="{{ src }}" alt="{{ alt }}">
+    <figcaption>{{ caption }}</figcaption>
+  </figure>
+{% endmacro %}
+
+{{ figure("/static/img/image.jpg", "Image form Unsplash", "Caption of the image") }}
+
+{% macro figurePath(src, alt, caption) %}
+  <figure>
+    <img src="{{ src }}" alt="{{ alt }}">
+    <figcaption class="before">{{ caption }}</figcaption>
+  </figure>
+{% endmacro %}

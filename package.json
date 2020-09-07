@@ -1,0 +1,73 @@
+{
+  "name": "@shittyweb/old.home",
+  "version": "1.0.0",
+  "description": "Bejoistic personal website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production npx eleventy && yarn build:js && yarn build:img",
+    "build:js": "uglifyjs static/js/script.js -c -o _site/static/js/script.js",
+    "build:webp": "imagemin --plugin=webp static/img/* --out-dir=_site/static/img/",
+    "build:img": "imagemin --plugin=mozjpeg --plugin=pngquant --plugin=svgo static/img/* --out-dir=_site/static/img/ & yarn build:webp",
+    "build:css": "postcss css/base.css -o css/style.css -w",
+    "build:commento": "cleancss -o css/commento.min.css css/commento.css",
+    "start": "yarn build:css & yarn build:commento & npx eleventy --serve --quiet",
+    "serve": "yarn build:css & yarn build:commento & eleventy --serve",
+    "debug": "DEBUG=Eleventy* yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shittyweb/old.home.git"
+  },
+  "keywords": [
+    "static-site",
+    "boilerplate"
+  ],
+  "author": "Ahmad Ainul Rizki <hey@bejoistic.com> (https://bejoistic.com)",
+  "contributors": [
+    "Ahmad Ainul Rizki <hey@bejoistic.com> (https://bejoistic.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shittyweb/old.home/issues"
+  },
+  "homepage": "https://bejoistic.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "autoprefixer": "^9.5.1",
+    "clean-css-cli": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "eleventy-plugin-reading-time": "0.0.1",
+    "eslint": "^5.16.0",
+    "imagemin-cli": "^4.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "imagemin-webp": "^6.0.0",
+    "lodash": "^4.17.20",
+    "markdown-it-prism": "^2.1.1",
+    "node-fetch": "^2.6.0",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-normalize": "^8.0.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-simple-vars": "^5.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "uglify-js": "^3.6.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "at-rule-no-unknown": null
+    }
+  },
+  "dependencies": {
+    "luxon": "^1.15.0"
+  }
+}

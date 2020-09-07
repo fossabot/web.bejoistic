@@ -1,0 +1,176 @@
+main {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 75%;
+}
+
+.content > * + * {
+  margin-top: $s1;
+}
+
+.content > * {
+  max-width: $width;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: $width;
+  margin: 0 auto;
+  padding: $s1;
+}
+
+.block-contact > * + * {
+  margin-top: $s2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+.grid-l {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+
+.grid-xl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+}
+
+.space > * + * {
+  margin-top: $s4;
+}
+
+.overview {
+  margin-top: 12vh;
+}
+
+.overview > * + * {
+  margin-top: $s6;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 10vw 0 10vw;
+  background: $primary;
+}
+
+.newsletter > * + * {
+  margin-top: $s1;
+}
+
+@media (min-width: 1400px) {
+  .newsletter {
+    max-width: 40vw;
+    min-width: 40vw;
+  }
+}
+
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  background: url(/static/img/bg-pattern.jpg);
+}
+
+.center > * + * {
+  margin-top: $s1;
+}
+
+.content {
+  padding: $s4;
+  background: $primary;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline {
+  display: grid;
+  margin: $s4;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 1em;
+}
+
+.column {
+  margin-bottom: $s6;
+
+  h2 {
+    margin-bottom: $s1;
+  }
+}
+
+.grid-full {
+  grid-column: 1 / -1;
+  border-bottom: $b1;
+  padding: $s1 $s4;
+}
+
+.contain {
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 5vh;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: -3em;
+  }
+}
+
+.contain > * + * {
+  margin-top: $s1;
+}
+
+.signature {
+  margin-top: $s2;
+  display: inline-block;
+}
+
+.pad {
+  padding: $s4;
+}
+
+.homepage {
+  h2 {
+    border-bottom: 2px solid $secondary;
+    padding-left: $s4;
+  }
+}
+
+.content li {
+  margin-top: 0.2rem;
+}
+
+/* Chain of command */
+
+.content p + h2,
+.content a + h2,
+.content p + h3,
+.content a + h3,
+.content p + h4,
+.content a + h4,
+.content ul + h2,
+.content ul + h3,
+.content ul + h4,
+.content ol + h2,
+.content ol + h3,
+.content ol + h4,
+.content article + h2 {
+  margin-top: $s5;
+}

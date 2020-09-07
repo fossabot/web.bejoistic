@@ -1,0 +1,51 @@
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  @mixin focus;
+}
+
+time {
+  display: inline-block;
+}
+
+img {
+  filter: grayscale();
+}
+
+hr {
+  width: 10%;
+  opacity: 0.2;
+}
+
+div ul {
+  padding-left: $s1;
+}
+
+ol {
+  padding-left: $s2;
+  list-style: none;
+  counter-reset: number;
+}
+
+ol li {
+  counter-increment: number;
+  margin-left: 0.5rem;
+
+  &:before {
+    content: "0" counter(number);
+    font-weight: bold;
+    font-size: $s-1;
+    letter-spacing: 0.1em;
+    margin-top: 0.1rem;
+    margin-left: -2rem;
+    position: absolute;
+  }
+}
+
+body {
+  border-color: $primary;
+}

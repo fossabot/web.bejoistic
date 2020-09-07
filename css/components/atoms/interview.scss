@@ -1,0 +1,34 @@
+.interview {
+  @mixin reset-list;
+  padding: $s1 0;
+  border-top: $b1;
+  position: relative;
+  max-width: $width;
+
+  &-list {
+    padding: 0;
+  }
+
+  &:last-child {
+    border-bottom: $b1;
+  }
+
+  &:after {
+    right: 0;
+    top: 40%;
+    right: 5%;
+    position: absolute;
+  }
+
+  &-podcast {
+    &:after {
+      content: url('/static/img/ui-icons/podcast.svg');
+    }
+  }
+
+  &-article {
+    &:after {
+      content: url('/static/img/ui-icons/article.svg');
+    }
+  }
+}

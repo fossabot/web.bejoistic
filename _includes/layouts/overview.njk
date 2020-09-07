@@ -1,0 +1,10 @@
+---
+layout: layouts/base
+---
+
+{% include 'components/molecules/site-header.njk' %}
+
+<main id="main">
+  {% include 'components/molecules/header.njk' %}
+  {{ content | safe }}
+</main>

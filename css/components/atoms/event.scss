@@ -1,0 +1,21 @@
+.event-list {
+  @mixin reset-list;
+
+  .event-item {
+    @mixin reset-list;
+    border-top: $b1;
+    padding: $s1 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $width;
+
+    &:last-child {
+      border-bottom: $b1;
+    }
+  }
+
+  .event-bar {
+    flex-basis: 4ch;
+    margin-right: $s3;
+  }
+}
