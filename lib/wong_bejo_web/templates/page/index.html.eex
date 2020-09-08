@@ -11,7 +11,7 @@
     <p>
       Currently improving this site with more features, content and styling. Want to know more about me <%= link "here the place", to: "/aboutme", target: "_blank" %>.
     </p>
-    <div class="d-none d-lg-incline-block">
+    <div class="d-none d-lg-block">
       <%= render "_invitation.html", conn: @conn %>
     </div>
   </div>
